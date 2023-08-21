@@ -1,0 +1,21 @@
+{
+    "name" : "JobUpload",
+    "description" : "Transfer the job from job finder to Openrole page (Corelation 1 students only)",
+    "version" : "1.2.1",
+    "manifest_version" : 3,
+    "permissions" : ["storage", "tabs", "scripting", "clipboardRead", "clipboardWrite",
+    "activeTab", "webNavigation", "input","notifications", "unlimitedStorage","cookies"],
+    "host_permissions" : ["<all_urls>"],
+    "action": {
+      "default_popup": "/popup/popup.html"
+    },
+    "background": {
+    "service_worker": "background.js"
+    },
+    "icons": {
+      "16": "img/LOGO.png",
+      "32": "img/LOGO2.png",
+      "64": "img/LOGO3.png",
+      "128": "img/LOGO4.png"
+    }
+  }
